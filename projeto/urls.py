@@ -16,8 +16,10 @@ urlpatterns = [
     path('login/', views.pagina_login, name='login.html'),
     path('perfil/', views.pagina_perfil),
     path('teste/', views.teste),
-    path('termos/', views.termos, name='termos.html'),
+    path('termos/', views.termos, name='termos'),
     path('charts/', views.pagina_charts, name='charts.html'),
+    path('quemsomos/', views.quemsomos, name='quemsomos'),
+    path('censo/', views.censo, name='censo'),
     path('', include('eduviz.urls')),
 ]
 

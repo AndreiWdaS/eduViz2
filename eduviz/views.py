@@ -164,7 +164,7 @@ def bar_chart(request):
 
 # Create your views here.
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'index.html')
 
 def pagina_brasil(request):
     return render(request, 'brasil.html')
@@ -184,3 +184,9 @@ def teste(request):
     return render(request, 'teste.html')
 def termos(request):
     return render(request, 'termos.html')
+
+def quemsomos(request):
+    return render(request, 'quemsomos.html')
+
+def censo(request):
+    return render(request, 'censo.html')

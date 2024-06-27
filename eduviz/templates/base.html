@@ -67,8 +67,8 @@
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="{% static 'censo.html' %}">O Censo</a>
-                                <a class="nav-link" href="{% static 'quemsomos.html' %}">Quem somos</a>
+                                <a class="nav-link" href="{% url 'censo' %}">O Censo</a>
+                                <a class="nav-link" href="{% url 'quemsomos' %}">Quem somos</a>
                             </nav>
                         </div>
                     </div>
@@ -78,7 +78,6 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard EduViz</h1>
                     <ol class="breadcrumb mb-4"></ol>
                     <!-- Conteúdo do Dashboard aqui -->
                     {% block conteudo %}
@@ -93,7 +92,7 @@
                         <div>
                             <a href="termos.html">Politica de privacidade</a>
                             &middot;
-                            <a href="#">Termos &amp; Condições</a>
+                            <a href="{% url 'termos' %}">Termos &amp; Condições</a>
                         </div>
                     </div>
                 </div>
